@@ -16,12 +16,5 @@ public class Runner extends AndroidAppium {
         driver.findElement(By.id("9")).click();
         driver.findElement(By.id("45")).click();
 
-//        List<WebElement> listItems = driver.findElements(LIST);
-//        for (int i = 0; i < listItems.size(); i++) {
-//            if (listItems.get(i).getText().equals("Views")) {
-//                listItems.get(i).click();
-//                break;
-//            }
-//        }
     }
 }
