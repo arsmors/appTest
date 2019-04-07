@@ -7,14 +7,18 @@ public class Runner extends AndroidAppium {
     private final By dateWidgets = By.xpath("//android.widget.TextView[@content-desc=\"Date Widgets\"]");
     private final By inline = By.xpath("//android.widget.TextView[@content-desc=\"2. Inline\"]");
 
+    public void clickNumber(String number){
+        driver.findElement(By.id(number)).click();
+    }
+
+
     @Test
     public void firstTest() {
 
         driver.findElement(By.id("Views")).click();
         driver.findElement(dateWidgets).click();
         driver.findElement(inline).click();
-        driver.findElement(By.id("9")).click();
-        driver.findElement(By.id("45")).click();
-
+        clickNumber("9");
+        clickNumber("45");
     }
 }
